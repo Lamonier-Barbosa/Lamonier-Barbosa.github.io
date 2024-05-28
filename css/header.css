@@ -37,6 +37,11 @@
     text-decoration: none;
     color: #e6e6e6;
     display: block;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.header-menu a:hover {
     border: 2px solid #5c0091;
     border-radius: 6px;
     background: #000000;
