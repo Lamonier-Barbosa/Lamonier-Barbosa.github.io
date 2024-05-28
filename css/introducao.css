@@ -64,6 +64,19 @@
     .introducao img {
         width: 250px;
         height: 250px;
-        margin: 0px 40px;
+        margin: 0px auto;
+    }
+}
+
+
+@media (max-width: 430px) and (min-width: 400px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img {
+        width: 250px;
+        height: 250px;
+        margin: 0px auto;
     }
 }
