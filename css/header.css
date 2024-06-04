@@ -66,10 +66,4 @@
         gap: 40px;
         padding: 20px;
     }
-
-    .header a {
-        background: #000000;
-        border: 2px solid #5c0091;
-        border-radius: 6px;
-    }
 }
