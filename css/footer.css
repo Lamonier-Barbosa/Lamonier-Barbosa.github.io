@@ -18,17 +18,42 @@
     color: #cccccc;
 }
 
+.footer-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .footer-contato li {
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
     color: #9400e9;
     margin-bottom: 30px;
+    max-width: 50px;
 }
 
 .footer-contato li a {
     color: #9400e9;
     text-decoration: none;
+}
+
+.footer-contato li a img {
+    max-width: 50px;
+
+}
+
+.footer li a img:hover {
+    filter: hue-rotate(700deg) contrast(65%);
+}
+
+.footer .tel a:hover {
+    color: #5e01d0e0;
+}
+
+.footer-contato .tel {
+    max-width: 300px;
+    font-size: 2rem;
+    grid-column: 1 / 6
 }
 
 .footer-copy {
