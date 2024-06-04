@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamonier - Desenvolvedor</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <meta name="description" content="Portfolio do Lamonier Barbosa Desenvolvedor Web e Engenheiro de Software.">
+    <meta name="description" content="Portfólio do Lamonier Barbosa Desenvolvedor Web e Engenheiro de Software.">
     <link rel="icon" href="./img/iconDeDev.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -31,22 +33,23 @@
         </svg>
     </div>
     <header class="header" id="home">
-        <h1 class="titulo-header">Lamonier Barbosa</h1>
+        <h1 class="titulo-header fadeInLeft" data-anime="400">Lamonier Barbosa</h1>
         <nav>
             <ul class="header-menu">
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a class="fadeInDown" data-anime="400" href="#experiencia">Experiência</a></li>
+                <li><a class="fadeInDown" data-anime="600" href="#formacao">Formação</a></li>
+                <li><a class="fadeInDown" data-anime="800" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="introducao">
-        <img src="./img/profile-pic (1).png" alt="Foto de lamonier barbosa" width="600" height="600">
+        <img class="fadeInUp" data-anime="800" src="./img/profile-pic (1).png" alt="Foto de lamonier barbosa"
+            width="600" height="600">
 
         <div>
-            <h1>Desenvolvedor <br> Full Stack <br> JavaScript</h1>
-            <p>Localizado no Rio de Janeiro</p>
+            <h1 class="fadeInLeft" data-anime="600">Desenvolvedor <br> Full Stack <br> JavaScript</h1>
+            <p class="fadeInRight" data-anime="400">Localizado no Rio de Janeiro</p>
         </div>
 
     </main>
@@ -175,16 +178,26 @@
                 uma
                 conversa 👋</p>
             <ul class="footer-contato">
-                <li>lamoni_lr@hotmail.com</li>
-                <li>(21) 9 7146-9447</li>
-                <li><a href="https://www.linkedin.com/in/lamonier-barbosa">Linkedin</a></li>
+                <li><a href="https://bit.ly/lamonier"><img src="./img/redes/whatsapp.svg" width="512" height="512"
+                            alt="WhatsApp"></a>
+                </li>
+                <li><a href="mailto:lamoni_lr@hotmail.com"><img src="./img/redes/email.svg" width="512" height="512"
+                            alt="E-mail"></a>
+                </li>
+                <li><a href="https://github.com/Lamonier-Barbosa"><img src="./img/redes/github.svg" width="512"
+                            height="512" alt="GitHub"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/lamonier-barbosa"><img src="./img/redes/linkedin.svg"
+                            width="512" height="512" alt="linkedin"></a>
+                </li>
+                <li class="tel"><a href="tel:+5521971469447">(21) 97146-9447</a></li>
             </ul>
-            <p class="footer-copy">Lamonier Barbosa Santos - Engenheiro de Software.</p>
+            <p class="footer-copy">Lamonier Barbosa Santos - Engenheiro de Software © Alguns Direitos Reservados.</p>
         </div>
     </footer>
 
-
-
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
