@@ -7,6 +7,25 @@
     gap: 100px;
 }
 
+.empresa {
+    animation: slidein 1ms ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        translate: +10vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
 .experiencia .subtitulo {
     color: #9400e9;
 }
@@ -61,27 +80,41 @@
     font-weight: bold;
 }
 
-.empresa-titulo {
-    font-size: 1.125rem;
-    line-height: 1.1;
-    font-weight: bold;
-    background: #5c0091;
-    padding: 8px 0px 8px 0px;
-    border-radius: 4px;
-    max-width: max-content;
-    border: 4px solid transparent;
-    display: block;
-}
-
-.empresa-titulo a {
-    color: #ffffff;
+.botao {
     text-decoration: none;
-    padding: 10px 4px 10px 4px;
-    max-width: inherit;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: linear-gradient(#9400e9, #5c0091);
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.125rem;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
 }
 
-.empresa-titulo:hover {
-    background: #9400e9;
+.botao:hover {
+    background: linear-gradient(#a200ff, #7e00c6);
+}
+
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 10px;
+    background: url("../img/seta.svg");
+    transition: 0.3s;
+}
+
+.botao.seta:hover:after {
+    transform: translateX(8px);
 }
 
 .tecnologias-utilizadas {
@@ -130,7 +163,7 @@
         text-align: left;
     }
 
-    .empresa-titulo a {
+    .botao a {
         color: #ffffff;
         text-decoration: none;
         padding: 0px 8px 4px 0;
@@ -146,7 +179,7 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     .empresa {
         grid-template-columns: 1fr;
     }
@@ -171,7 +204,7 @@
         text-align: left;
     }
 
-    .empresa-titulo a {
+    .botao {
         color: #ffffff;
         text-decoration: none;
         padding: 0px 8px 4px 0;
@@ -184,5 +217,33 @@
         border: 4px solid transparent;
         padding: 8px 0px 0px 8px;
         display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .botao {
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .empresa {
+        animation: slidein 1ms ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: cover 0% cover 30%;
+    }
+
+    @keyframes slidein {
+        from {
+            opacity: 0;
+            translate: +5vw 0;
+        }
+
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
     }
 }

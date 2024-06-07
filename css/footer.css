@@ -16,14 +16,16 @@
     font-size: 1.5rem;
     line-height: 1.33;
     color: #cccccc;
+    position: relative;
 }
 
 .footer-contato {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
 }
 
-.footer-contato li {
+.footer-contato .footer-lista {
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
@@ -32,7 +34,7 @@
     max-width: 50px;
 }
 
-.footer-contato li a {
+.footer-contato .footer-link {
     color: #9400e9;
     text-decoration: none;
 }
@@ -42,7 +44,7 @@
 
 }
 
-.footer li a img:hover {
+.footer .footer-lista .footer-link img:hover {
     filter: hue-rotate(700deg) contrast(65%);
 }
 
@@ -54,6 +56,51 @@
     max-width: 300px;
     font-size: 2rem;
     grid-column: 1 / 6
+}
+
+/* .botao-home {
+    background: #9400e9;
+    grid-column: 4;
+    padding: 8px 10px;
+    max-width: max-content;
+    border-radius: 100px;
+} */
+.botao-home {
+    padding: 10px 15px;
+    background: #000000;
+    /* linear-gradient(#9400e9, #5c0091); */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    grid-column: 4;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: -150px;
+    bottom: -100px;
+}
+
+/* .botao-home:hover {
+    background: linear-gradient(#07020a, #62516b);
+} */
+
+.botao-home.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao-home.seta::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 14px;
+    background: url("../img/seta-para-cima.svg");
+    transition: 0.3s;
+}
+
+.botao-home.seta:hover:after {
+    transform: translateY(-10px);
 }
 
 .footer-copy {
@@ -70,5 +117,51 @@
 
     .footer-contato li {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1530px) {
+    .botao-home {
+        width: 40px;
+        height: 40px;
+        right: auto;
+        bottom: -100px;
+    }
+
+    .botao-home.seta::after {
+        width: 40px;
+        height: 33px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 830px) {
+    .botao-home {
+        width: 40px;
+        height: 40px;
+        right: auto;
+        bottom: -120px;
+    }
+
+    .botao-home.seta::after {
+        width: 35px;
+        height: 30px;
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .botao-home {
+        width: 40px;
+        height: 40px;
+        right: auto;
+        bottom: -20px;
+    }
+
+    .botao-home.seta::after {
+        width: 35px;
+        height: 30px;
+        margin-left: 10px;
     }
 }
