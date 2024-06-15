@@ -16,7 +16,7 @@
 @keyframes slidein {
     from {
         opacity: 0;
-        translate: +10vw 0;
+        translate: +3vw 0;
     }
 
     to {
