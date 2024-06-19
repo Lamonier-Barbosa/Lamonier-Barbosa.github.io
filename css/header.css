@@ -49,9 +49,6 @@
 }
 
 .header-menu a:hover::after {
-    /* border: 2px solid #5c0091;
-    border-radius: 6px;
-    background: #000000; */
     width: 100%;
     transition: 0.3s;
 }

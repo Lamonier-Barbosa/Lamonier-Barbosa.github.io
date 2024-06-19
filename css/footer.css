@@ -58,17 +58,9 @@
     grid-column: 1 / 6
 }
 
-/* .botao-home {
-    background: #9400e9;
-    grid-column: 4;
-    padding: 8px 10px;
-    max-width: max-content;
-    border-radius: 100px;
-} */
 .botao-home {
     padding: 10px 15px;
     background: #000000;
-    /* linear-gradient(#9400e9, #5c0091); */
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -79,10 +71,6 @@
     right: -150px;
     bottom: -100px;
 }
-
-/* .botao-home:hover {
-    background: linear-gradient(#07020a, #62516b);
-} */
 
 .botao-home.seta {
     display: flex;
