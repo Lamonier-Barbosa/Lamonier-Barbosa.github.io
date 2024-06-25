@@ -92,6 +92,7 @@
 }
 
 .footer-copy {
+    justify-self: center;
     grid-column: 1 / -1;
     font-size: 1.125rem;
     color: #8f8f8f;
